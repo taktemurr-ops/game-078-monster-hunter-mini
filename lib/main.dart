@@ -69,7 +69,7 @@ class _HuntScreenState extends State<HuntScreen> {
                   const SizedBox(height: 14),
                   Text('MONSTER  HP ${game.monsterHp}/${game.monsterMaxHp}'),
                   LinearProgressIndicator(
-                    value: (game.monsterHp / game.monsterMaxHp).clamp(0.0, 1.0),
+                    value: (game.monsterHp / game.monsterMaxHp).clamp(0.0, 1.0).toDouble(),
                     minHeight: 10, borderRadius: BorderRadius.circular(6)),
                   const SizedBox(height: 18),
                   AspectRatio(
